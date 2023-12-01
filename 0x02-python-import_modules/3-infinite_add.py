@@ -1,8 +1,11 @@
-#!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
-    import math
-    result = 0
-    for i in sys.argv:
-        result += int(i)
-        print("{}".format(result))
+#!/usr/bin/python
+if __name__ == '__main__':
+    from sys import argv
+    length = len(argv)
+    argCount = length - 1
+    i = 1
+    add = 0
+    while i <= argCount:
+        add += int(argv[i])
+        i += 1
+    print("{:d}".format(add))
